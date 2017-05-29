@@ -5,8 +5,8 @@ import ReactNative, {
   Text,
   StyleSheet,
   ScrollView,
-  Dimensions,
   TextInput,
+  Dimensions,
 } from "react-native";
 
 import CreditCard from "./CardView";
@@ -18,7 +18,7 @@ const s = StyleSheet.create({
     alignItems: "center",
   },
   form: {
-    marginTop: 20,
+    marginTop: 0,
   },
   inputContainer: {
     marginLeft: 20,
@@ -61,7 +61,6 @@ export default class CreditCardInput extends Component {
     cardBrandIcons: PropTypes.object,
 
     allowScroll: PropTypes.bool,
-
     additionalInputsProps: PropTypes.objectOf(PropTypes.shape(TextInput.propTypes)),
   };
 
@@ -116,8 +115,7 @@ export default class CreditCardInput extends Component {
     const {
       inputStyle, labelStyle, validColor, invalidColor, placeholderColor,
       placeholders, labels, values, status,
-      onFocus, onChange, onBecomeEmpty, onBecomeValid,
-      additionalInputsProps,
+      onFocus, onChange, onBecomeEmpty, onBecomeValid, additionalInputsProps,
     } = this.props;
 
     return {
@@ -132,7 +130,6 @@ export default class CreditCardInput extends Component {
       status: status[field],
 
       onFocus, onChange, onBecomeEmpty, onBecomeValid,
-
       additionalInputProps: additionalInputsProps[field],
     };
   };

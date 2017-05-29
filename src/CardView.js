@@ -24,15 +24,15 @@ const s = StyleSheet.create({
     resizeMode: "contain",
   },
   baseText: {
-    color: "rgba(255, 255, 255, 0.8)",
+    color: '#16A556',
     backgroundColor: "transparent",
   },
   placeholder: {
-    color: "rgba(255, 255, 255, 0.5)",
+    color: "#757575",
   },
   focused: {
     fontWeight: "bold",
-    color: "rgba(255, 255, 255, 1)",
+    color: "#16A556",
   },
   number: {
     fontSize: 21,
@@ -53,6 +53,18 @@ const s = StyleSheet.create({
     bottom: 40,
     left: 218,
   },
+  numberCardLabel: {
+    fontSize: 13,
+    position: "absolute",
+    top: 75,
+    left: 30,
+  },
+  nameCardLabel: {
+    fontSize: 13,
+    position: "absolute",
+    bottom: 40,
+    left: 25,
+  },
   expiry: {
     fontSize: 16,
     position: "absolute",
@@ -68,8 +80,8 @@ const s = StyleSheet.create({
   cvc: {
     fontSize: 16,
     position: "absolute",
-    top: 80,
-    right: 30,
+    top: 90,
+    right: 32,
   },
 });
 
@@ -134,13 +146,20 @@ export default class CardView extends Component {
           <Image style={[BASE_SIZE, s.cardFace, transform]}
               source={imageFront}>
               <Image style={[s.icon]}
-                  source={Icons[brand]} />
+                  source={{ uri: Icons[brand] }} />
+            <Text style={[s.baseText, { fontFamily }, s.numberCardLabel, s.placeholder]}>
+              Số thẻ
+            </Text>
               <Text style={[s.baseText, { fontFamily }, s.number, !number && s.placeholder, focused === "number" && s.focused]}>
                 { !number ? placeholder.number : number }
               </Text>
+              <Text style={[s.baseText, { fontFamily }, s.nameCardLabel, s.placeholder]}>
+                Họ tên
+              </Text>
               <Text style={[s.baseText, { fontFamily }, s.name, !name && s.placeholder, focused === "name" && s.focused]}
                   numberOfLines={1}>
-                { !name ? placeholder.name : name.toUpperCase() }
+                {/*{ !name ? placeholder.name : name.toUpperCase() }*/}
+                { name.toUpperCase() }
               </Text>
               <Text style={[s.baseText, { fontFamily }, s.expiryLabel, s.placeholder, focused === "expiry" && s.focused]}>
                 MONTH/YEAR
