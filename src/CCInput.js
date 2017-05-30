@@ -73,7 +73,7 @@ export default class CCInput extends Component {
     return (
       <TouchableOpacity onPress={this.focus}
                         activeOpacity={0.99}>
-        <View style={[containerStyle]}>
+        <View style={[containerStyle, {borderBottomColor:'#16A556'}]}>
           {/*{ !!label && <Text style={[labelStyle]}>{label}</Text>}*/}
           <TextInput ref="input"
                      {...additionalInputProps}
