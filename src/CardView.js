@@ -48,10 +48,10 @@ const s = StyleSheet.create({
     right: 100,
   },
   expiryLabel: {
-    fontSize: 9,
+    fontSize: 13,
     position: "absolute",
     bottom: 40,
-    left: 218,
+    left: 228,
   },
   numberCardLabel: {
     fontSize: 13,
@@ -147,14 +147,14 @@ export default class CardView extends Component {
               source={imageFront}>
               <Image style={[s.icon]}
                   source={{ uri: Icons[brand] }} />
-            <Text style={[s.baseText, { fontFamily }, s.numberCardLabel, s.placeholder]}>
-              Số thẻ
-            </Text>
+            {/*<Text style={[s.baseText, { fontFamily }, s.numberCardLabel, s.placeholder]}>*/}
+              {/*Số thẻ*/}
+            {/*</Text>*/}
               <Text style={[s.baseText, { fontFamily }, s.number, !number && s.placeholder, focused === "number" && s.focused]}>
                 { !number ? placeholder.number : number }
               </Text>
               <Text style={[s.baseText, { fontFamily }, s.nameCardLabel, s.placeholder]}>
-                Họ tên
+                HỌ TÊN
               </Text>
               <Text style={[s.baseText, { fontFamily }, s.name, !name && s.placeholder, focused === "name" && s.focused]}
                   numberOfLines={1}>
@@ -162,7 +162,7 @@ export default class CardView extends Component {
                 { name.toUpperCase() }
               </Text>
               <Text style={[s.baseText, { fontFamily }, s.expiryLabel, s.placeholder, focused === "expiry" && s.focused]}>
-                Hết hạn
+                HẾT HẠN
               </Text>
               <Text style={[s.baseText, { fontFamily }, s.expiry, !expiry && s.placeholder, focused === "expiry" && s.focused]}>
                 { !expiry ? placeholder.expiry : expiry }

@@ -15,8 +15,8 @@
       <file leaf-file-name="CardView.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CardView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="162" column="21" lean-forward="true" selection-start-line="162" selection-start-column="21" selection-end-line="162" selection-end-column="21" />
+            <state relative-caret-position="162">
+              <caret line="53" column="12" lean-forward="false" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -263,12 +263,12 @@
       <option name="presentableId" value="Default" />
       <updated>1496130103601</updated>
       <workItem from="1496130105169" duration="716000" />
-      <workItem from="1496205605532" duration="440000" />
+      <workItem from="1496205605532" duration="840000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1156000" />
+    <option name="totallyTimeSpent" value="1556000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1016" extended-state="0" />
@@ -391,8 +391,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CardView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="162" column="21" lean-forward="true" selection-start-line="162" selection-start-column="21" selection-end-line="162" selection-end-column="21" />
+        <state relative-caret-position="162">
+          <caret line="53" column="12" lean-forward="false" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
           <folding />
         </state>
       </provider>
