@@ -46,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreditCardInput.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CreditCardInput.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CreditCardInput.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="162" column="27" lean-forward="true" selection-start-line="162" selection-start-column="27" selection-end-line="162" selection-end-column="27" />
+            <state relative-caret-position="399">
+              <caret line="160" column="39" lean-forward="true" selection-start-line="160" selection-start-column="39" selection-end-line="160" selection-end-column="39" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
               </folding>
@@ -58,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CCInput.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CCInput.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CCInput.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="74" column="45" lean-forward="true" selection-start-line="74" selection-start-column="45" selection-end-line="74" selection-end-column="45" />
+            <state relative-caret-position="451">
+              <caret line="80" column="48" lean-forward="true" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="48" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
               </folding>
@@ -99,8 +99,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>border</find>
-      <find>onBecomeEmpty</find>
       <find>value</find>
+      <find>onBecomeEmpty</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -112,8 +112,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/CardView.js" />
-        <option value="$PROJECT_DIR$/src/CCInput.js" />
         <option value="$PROJECT_DIR$/src/CreditCardInput.js" />
+        <option value="$PROJECT_DIR$/src/CCInput.js" />
       </list>
     </option>
   </component>
@@ -317,12 +317,12 @@
       <updated>1496130103601</updated>
       <workItem from="1496130105169" duration="716000" />
       <workItem from="1496205605532" duration="1048000" />
-      <workItem from="1496284331926" duration="3087000" />
+      <workItem from="1496284331926" duration="3203000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4851000" />
+    <option name="totallyTimeSpent" value="4967000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="22" width="1920" height="1016" extended-state="6" />
@@ -495,20 +495,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CCInput.js">
+    <entry file="file://$PROJECT_DIR$/src/CreditCardInput.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="74" column="45" lean-forward="true" selection-start-line="74" selection-start-column="45" selection-end-line="74" selection-end-column="45" />
+        <state relative-caret-position="399">
+          <caret line="160" column="39" lean-forward="true" selection-start-line="160" selection-start-column="39" selection-end-line="160" selection-end-column="39" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CreditCardInput.js">
+    <entry file="file://$PROJECT_DIR$/src/CCInput.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="162" column="27" lean-forward="true" selection-start-line="162" selection-start-column="27" selection-end-line="162" selection-end-column="27" />
+        <state relative-caret-position="451">
+          <caret line="80" column="48" lean-forward="true" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="48" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
           </folding>
