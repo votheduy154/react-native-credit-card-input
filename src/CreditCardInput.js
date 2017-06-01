@@ -74,7 +74,7 @@ export default class CreditCardInput extends Component {
       postalCode: "POSTAL CODE",
     },
     placeholders: {
-      name: "Họ và tên",
+      name: "HỌ VÀ TÊN",
       number: "Mã số thẻ",
       expiry: "MM/YY",
       cvc: "CVC",
