@@ -51,7 +51,7 @@ const s = StyleSheet.create({
     fontSize: 13,
     position: "absolute",
     bottom: 40,
-    left: 228,
+    left: 208,
   },
   numberCardLabel: {
     fontSize: 13,
