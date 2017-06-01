@@ -46,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreditCardInput.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CreditCardInput.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CreditCardInput.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="484">
@@ -58,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CCInput.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CCInput.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CCInput.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="71" column="26" lean-forward="false" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="26" />
+            <state relative-caret-position="279">
+              <caret line="70" column="31" lean-forward="false" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
               </folding>
@@ -99,8 +99,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>border</find>
-      <find>value</find>
       <find>onBecomeEmpty</find>
+      <find>value</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -112,8 +112,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/CardView.js" />
-        <option value="$PROJECT_DIR$/src/CreditCardInput.js" />
         <option value="$PROJECT_DIR$/src/CCInput.js" />
+        <option value="$PROJECT_DIR$/src/CreditCardInput.js" />
       </list>
     </option>
   </component>
@@ -197,6 +197,8 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.standard" value="" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -314,15 +316,15 @@
       <updated>1496130103601</updated>
       <workItem from="1496130105169" duration="716000" />
       <workItem from="1496205605532" duration="1048000" />
-      <workItem from="1496284331926" duration="1528000" />
+      <workItem from="1496284331926" duration="2851000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3292000" />
+    <option name="totallyTimeSpent" value="4615000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1016" extended-state="6" />
+    <frame x="0" y="22" width="1920" height="1016" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -431,7 +433,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -449,7 +451,7 @@
         <state relative-caret-position="120">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="e#0#46#0" expanded="true" />
+            <element signature="e#0#46#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -482,16 +484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CreditCardInput.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="161" column="50" lean-forward="true" selection-start-line="161" selection-start-column="50" selection-end-line="161" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LiteCreditCardInput.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-697">
@@ -504,8 +496,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CCInput.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="71" column="26" lean-forward="false" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="26" />
+        <state relative-caret-position="279">
+          <caret line="70" column="31" lean-forward="false" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CreditCardInput.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="161" column="50" lean-forward="true" selection-start-line="161" selection-start-column="50" selection-end-line="161" selection-end-column="50" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
           </folding>
