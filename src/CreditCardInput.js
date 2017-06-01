@@ -161,7 +161,7 @@ export default class CreditCardInput extends Component {
             scrollEnabled={allowScroll}
             showsHorizontalScrollIndicator={false}
             style={s.form}>
-          <CCInput additionalInputProps={{ maxLength: 19, secureTextEntry: true }} {...this._inputProps("number")}
+          <CCInput maxLength={19} {...this._inputProps("number")}
               containerStyle={[s.inputContainer, inputContainerStyle, { width: CARD_NUMBER_INPUT_WIDTH }]} />
           <CCInput {...this._inputProps("expiry")}
               containerStyle={[s.inputContainer, inputContainerStyle, { width: EXPIRY_INPUT_WIDTH }]} />

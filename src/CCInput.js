@@ -68,7 +68,7 @@ export default class CCInput extends Component {
   render() {
     const { label, value, placeholder, status, keyboardType,
       containerStyle, inputStyle, labelStyle,
-      validColor, invalidColor, placeholderColor,
+      validColor, invalidColor, placeholderColor, maxLength,
       additionalInputProps } = this.props;
     return (
       <TouchableOpacity onPress={this.focus}
@@ -90,6 +90,7 @@ export default class CCInput extends Component {
                      underlineColorAndroid={"transparent"}
                      placeholderTextColor={placeholderColor}
                      placeholder={placeholder}
+                     maxLength={maxLength}
                      value={value}
                      onFocus={this._onFocus}
                      onChangeText={this._onChange} />
