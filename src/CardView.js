@@ -7,6 +7,7 @@ import {
   Platform,
 } from "react-native";
 
+import _ from 'lodash'
 import defaultIcons from "./Icons";
 import FlipCard from "react-native-flip-card";
 
@@ -51,13 +52,13 @@ const s = StyleSheet.create({
     fontSize: 13,
     position: "absolute",
     bottom: 40,
-    left: 208,
+    left: 215,
   },
   numberCardLabel: {
     fontSize: 13,
     position: "absolute",
     top: 75,
-    left: 30,
+    left: 25,
   },
   nameCardLabel: {
     fontSize: 13,
@@ -107,9 +108,9 @@ export default class CardView extends Component {
   static defaultProps = {
     name: "",
     placeholder: {
-      number: "•••• •••• •••• ••••",
+      number: "---- ---- ---- ----",
       name: "FULL NAME",
-      expiry: "••/••",
+      expiry: "MM/YY",
       cvc: "•••",
     },
 
@@ -123,7 +124,7 @@ export default class CardView extends Component {
     const { focused,
       brand, name, number, expiry, cvc, customIcons,
       placeholder, imageFront, imageBack, scale, fontFamily } = this.props;
-
+    let realNumber = null
     const Icons = { ...defaultIcons, ...customIcons };
     const isAmex = brand === "american-express";
     const shouldFlip = !isAmex && focused === "cvc";
@@ -133,6 +134,30 @@ export default class CardView extends Component {
       { scale },
       { translateY: ((BASE_SIZE.height * (scale - 1) / 2)) },
     ] };
+    if(number){
+      const splitHolder = _.split(placeholder.number,' ')
+      const splitNumber = _.split(number,' ')
+      const returnNumber = []
+
+      _.map(splitNumber,(value, index)=>{
+         // console.log(value)
+        if(4 - value.length === 0){
+          splitHolder[index] = value
+        }
+        if(4 - value.length === 1){
+          splitHolder[index] = value+'-'
+        }
+        if(4 - value.length === 2){
+          splitHolder[index] = value+'--'
+        }
+        if(4 - value.length === 3){
+          splitHolder[index] = value+'---'
+        }
+      })
+
+      realNumber = _.join(splitHolder,' ')
+
+    }
 
     return (
       <View style={[s.cardContainer, containerSize]}>
@@ -147,22 +172,24 @@ export default class CardView extends Component {
               source={imageFront}>
               <Image style={[s.icon]}
                   source={{ uri: Icons[brand] }} />
-            {/*<Text style={[s.baseText, { fontFamily }, s.numberCardLabel, s.placeholder]}>*/}
-              {/*Số thẻ*/}
-            {/*</Text>*/}
+            <Text style={[s.baseText, { fontFamily }, s.numberCardLabel, s.placeholder]}>
+              Số thẻ
+            </Text>
               <Text style={[s.baseText, { fontFamily }, s.number, !number && s.placeholder, focused === "number" && s.focused]}>
-                { !number ? placeholder.number : number }
+                { !number ? placeholder.number : realNumber }
               </Text>
               <Text style={[s.baseText, { fontFamily }, s.nameCardLabel, s.placeholder]}>
-                HỌ TÊN
+                Họ tên
               </Text>
+
               <Text style={[s.baseText, { fontFamily }, s.name, !name && s.placeholder, focused === "name" && s.focused]}
                   numberOfLines={1}>
                 {/*{ !name ? placeholder.name : name.toUpperCase() }*/}
                 { name.toUpperCase() }
               </Text>
+
               <Text style={[s.baseText, { fontFamily }, s.expiryLabel, s.placeholder, focused === "expiry" && s.focused]}>
-                HẾT HẠN
+                Hết hạn
               </Text>
               <Text style={[s.baseText, { fontFamily }, s.expiry, !expiry && s.placeholder, focused === "expiry" && s.focused]}>
                 { !expiry ? placeholder.expiry : expiry }

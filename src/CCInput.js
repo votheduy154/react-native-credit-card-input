@@ -73,7 +73,7 @@ export default class CCInput extends Component {
     return (
       <TouchableOpacity onPress={this.focus}
                         activeOpacity={0.99}>
-        <View style={[containerStyle, {borderBottomColor:'#16A556'}]}>
+        <View style={[containerStyle, {borderBottomWidth: 0,borderBottomColor:'#16A556'}]}>
           {/*{ !!label && <Text style={[labelStyle]}>{label}</Text>}*/}
           <TextInput ref="input"
                      {...additionalInputProps}
@@ -83,8 +83,9 @@ export default class CCInput extends Component {
                      style={[
                        s.baseInputStyle,
                        inputStyle,
+                       { marginTop: 10, borderWidth: 1, borderColor: '#ccc', paddingHorizontal: 10, borderRadius: 5 },
                        ((validColor && status === "valid") ? { color: validColor } :
-                         (invalidColor && status === "invalid") ? { color: invalidColor } :
+                         (invalidColor && status === "invalid") ? { color: invalidColor, borderColor: 'red'  } :
                            {}),
                      ]}
                      underlineColorAndroid={"transparent"}
